@@ -1,0 +1,6 @@
+<aura:component>
+
+<c:child_lwc_comp onlwcevent="{!c.handlechidlwc}"></c:child_lwc_comp>
+
+
+</aura:component>	

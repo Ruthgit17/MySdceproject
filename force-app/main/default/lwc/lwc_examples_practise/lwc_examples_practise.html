@@ -1,0 +1,58 @@
+<template>
+
+    <lightning-card name="Lwc">
+
+        <!--Binding the Data in Lwc-->
+
+            property:{value}
+
+        <!-- Lightning Input-->
+           <lightning-input type="Name" label="Enter Name" placeholder="Enter the Name" onchange={handlename}></lightning-input>
+        
+        <!-- Conditional Rendering HTML-->
+
+             <template if:true={fname}>
+                <h1>First name is : Surla</h1>
+            </template>
+
+            <template if:false={LName}>
+                <h1>Last Name  is : Rutheesh</h1>
+            </template>
+             
+            <lightning-button  variant="base" label="First"  onclick={handleFirst}  ></lightning-button>
+            <lightning-button  variant="Success" label="Last"  onclick={handleLast}  ></lightning-button>
+          
+            <!-- For Each Directive-->
+             
+               <template for:each={students} for:item="st" >
+                  <p key={st.id}> Name:{st.Name} Branch:{st.Branch}</p>
+                 
+               </template>
+
+               <!-- sample calculator -->
+
+               <lightning-input label="Enter value 1" name="number1" onchange={handlechange}></lightning-input>
+               <lightning-input label="Enter value 2" name="number2" onchange={handlechange}></lightning-input>
+
+                 Result is:{result};  <br>
+         
+               <lightning-button label="add" variant="Brand" onclick={doadd}></lightning-button>
+               <lightning-button label="sub" variant="Destructive" onclick={dosub}></lightning-button>
+               <lightning-button label="mul" variant="Brand" onclick={domul}></lightning-button>
+               <lightning-button label="div" variant="Success" onclick={dodiv}></lightning-button>
+
+             <!-- Custom Validations -->
+
+          
+             <lightning-input label="enter number" class="pan" name="pancard" onchange={handle}></lightning-input> \
+             
+             
+             <!-- Custom Metadata And Custom labels from Lwc -->
+            
+               <lightning-input label="Enter the No1" name="no1" class="numbe1" Onchange={HandleChange}/lightning-input>
+            <lightning-input label="Enter the No2" name="no2" class="numbe2" Onchange={Handlechange}/lightning-input
+             
+             <lightning-button label="add" variant="Success" onclick={Adddo}></lightning-button>
+        </lightning-card>
+
+</template>

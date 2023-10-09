@@ -1,0 +1,35 @@
+<template>
+    
+    <lightning-card name="Lwc_form_based">
+
+        <lightning-record-form 
+          
+        object-api-name="Contact"
+        
+        layout-type="compact" mode="create"></lightning-record-form>
+
+    </lightning-card>
+
+
+    <lightning-card name="lwc_recordEditform">
+
+        <lightning-record-edit-form 
+        recordid={recordId} object-api-name="Account" layout-type="Full" mode="edit" >
+
+        <lightning-output-field field-name="Name"></lightning-output-field>
+
+        <lightning-input-field field-name="Description"></lightning-input-field>
+
+        <lightning-input-field field-name="Industry"></lightning-input-field>
+
+        <lightning-input-field field-name="Site"></lightning-input-field>
+        <lightning-input-field field-name="Rating"></lightning-input-field>
+        <lightning-input label="nae of Website" onchange={callchange}></lightning-input>
+
+        
+    </lightning-record-edit-form>
+
+        
+        
+    </lightning-card>
+</template>

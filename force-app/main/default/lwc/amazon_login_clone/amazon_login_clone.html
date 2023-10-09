@@ -1,0 +1,34 @@
+<template>
+      <div class="Loginpage">
+    <lightning-card  variant="base" name="Loginpage">
+        <div class="slds-grid slds-grid_vertical">
+          
+            <!--  Logol/Branding -->
+
+            <div class="slds-col">
+               <p class="fontSizeCustom">Sign In</p>
+            </div>
+
+            <!-- Input Types-->
+
+            <div class="slds-col">
+              
+            <lightning-input type="text" label="Enter Email" placeholder="Enter The Name" value={Email} onchange={HandleEmail}>
+
+            </lightning-input>
+            <lightning-input type="password" label="Enter Password" placeholder="Enter Password" value={Password} onchange={HandlePassword}>
+                
+            </lightning-input>
+            </div>
+
+            <!-- Log in Button -->>
+
+            <div class="button">
+              
+                <lightning-button label="Continue" variant="Destructive" onclick={loginclick}></lightning-button>
+            </div>
+          </div>
+    </lightning-card>
+</div>
+    
+</template>
