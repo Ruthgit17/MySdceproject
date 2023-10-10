@@ -5,13 +5,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title> HTML Examle Document</title>
 
     <!-- this is used to inclide the css file -->
     <link rel="stylesheet" href="hello.css">
 
     <!-- this is used to include the js file -->
     <script src="hello.js"></script>
+
+     <style>
+        p{color:red};
+     </style>
+
 </head>
   <!-- Body starts from here -->
 <body>
@@ -35,14 +40,112 @@
     <a href="https://www.google.com" target="_blank"> Go to Google</a><br>
     <a href="https://www.facebook.com" target="_blank"> Go to facebook</a><br>
 
-    <img src="https://media.istockphoto.com/id/1287831962/photo/happy-black-woman-unpacking-box-after-online-shopping.webp?b=1&s=170667a&w=0&k=20&c=5FLT5L9h00pw3ivcnLCXoUnTpMm9ocpbFBhYg3tSm78=" alt="">
+    <!-- <img src="https://media.istockphoto.com/id/1287831962/photo/happy-black-woman-unpacking-box-after-online-shopping.webp?b=1&s=170667a&w=0&k=20&c=5FLT5L9h00pw3ivcnLCXoUnTpMm9ocpbFBhYg3tSm78=" alt=""> -->
 
-    <img src="https://media.istockphoto.com/id/1010024086/photo/package-delivery.webp?b=1&s=170667a&w=0&k=20&c=vUc45-8n-QUUETDxqve-xZNCvhNKeqPJHM7K5DYVFUk=" alt="">
-
-    <img src="https://images.unsplash.com/photo-1578882113036-761708189373?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8MXw5OTE0NDY0M3x8ZW58MHx8fHx8&auto=format&fit=crop&w=500&q=60" alt="">
+    <!-- <img src="https://media.istockphoto.com/id/1010024086/photo/package-delivery.webp?b=1&s=170667a&w=0&k=20&c=vUc45-8n-QUUETDxqve-xZNCvhNKeqPJHM7K5DYVFUk=" alt=""> -->
 
 
+     <!-- Table and List -->
+      
+        <table>
+             <thead>
+               <th>
+                 <tr> Name  </tr>
+                 <tr> Roll no </tr>
+                 <tr> position  </tr>
 
+               </th>
+              
+             </thead>
+             <tbody>
+                 <tr>
+                   <td>Rohan</td>
+                   <td>10223344</td>
+                   <td>developer</td>
+                 </tr>
+                 <tr>
+                  <td>Ramesh</td>
+                  <td>10443344</td>
+                  <td>tester</td>
+                </tr>
+              </tbody>
+            </table>
+
+            <ul type="circle">
+                <li>Salesforce Administrator</li>
+                <li>Salesforce Developer</li>
+                <li>salesforce Integrator</li>
+
+            </ul>
+
+            <ol type="A">
+               <li>India</li>
+               <li>China</li>
+               <li>Nepal</li>
+            </ol>
+
+
+            <!-- Form Tag and input tag -->
+                 
+                <form action="backend.php">
+                  
+                  <label for="name">name</label>
+                  <div>
+                   Name: <input type="text" name="Myname" id="name">
+                  </div>
+                  <div>
+                    eligibility: <input type="checkbox" name="MyEligibility">
+                   </div>
+                   <div>
+                    Gender: Male<input type="radio" name="MyGender"> FeMale<input type="radio" name="MyGender">
+                   </div>
+                      
+                   <label for="car">car</label>
+                      <div>
+                       <select name="ind" id="car" >
+                         <option value="ind">indigo</option>
+                         <option value="swf">swift</option>
+                       </select>
+
+                       <div>
+                        wrute about yourself : <br> <textarea name="Myself" id="" cols="30" rows="10"></textarea>
+                       </div>
+                       
+                      </div>
+                  
+                </form>
+
+
+                <!-- Inline and Block line elements -->
+
+                <a> This is paragraph</a> <a>This si salso a paragraph</a>
+
+                <span>This is span </span> <span>This is also a span</span>
+
+
+                <!-- Id and classes -->
+
+                <div id="ruth" class="redbg">
+                  this ois main class
+                </div>
+
+                <span class="red1"></span>
+
+                <!-- to create multiple emlements using span.elememt -->
+
+                <span class="red2 red3 red4 red5">First</span>
+                <span class="red2 red3 red4 red5">Second</span>
+                <span class="red2 red3 red4 red5">Third</span>
+
+
+                <!-- Html Entitles -->
+
+                <div>
+                  <p copyyright the line &copy></p>
+                </div>
+
+                 
+            
 
     
 </body>
